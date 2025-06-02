@@ -1,0 +1,12 @@
+{
+  "name": "flutter_docker",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "flutter",
+  "workspaceFolder": "/home/developer/workspace",
+  "remoteUser": "developer",
+  "extensions": ["dart-code.flutter"],
+  "runArgs": ["--privileged"],
+  "settings": {
+    "terminal.integrated.shell.linux": null
+  }
+}

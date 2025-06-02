@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  flutter:
+    build:
+      context: .                
+      dockerfile: Dockerfile   
+    container_name: flutter_container
+    user: developer
+    volumes:
+      - ./workspace:/home/developer/workspace:cached
+    working_dir: /home/developer/workspace
+    stdin_open: true
+    tty: true
+    privileged: true
