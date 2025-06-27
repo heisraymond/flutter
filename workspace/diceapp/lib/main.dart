@@ -14,12 +14,23 @@ screen
 
 Here we are calling the fucntion
 */
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
     home: Scaffold(
-      backgroundColor: Color.fromARGB(255, 68, 138, 255),
-      body: Center(
-        child: Text("Hello world!"),
-        )
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              const Color.fromARGB(255, 38, 115, 247),
+              const Color.fromARGB(255, 83, 132, 217)
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight
+          ),
+        ),
+        child: const Center(
+          child: Text("Hello world!"),
+          ),
+      )
       ),
     ),
   );
