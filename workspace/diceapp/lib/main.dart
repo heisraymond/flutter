@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'gradient_container.dart';
 
 
 /*This is a custom fucntion in flutter
@@ -22,30 +23,3 @@ Here we are calling the fucntion
   );
 } 
 
-class GradientContainer extends StatelessWidget {
-  @override
-  // Returns a widget
-  Widget build(context) {
-    return Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              const Color.fromARGB(255, 38, 115, 247),
-              const Color.fromARGB(255, 83, 132, 217)
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight
-          ),
-        ),
-        child: const Center(
-          child: Text(
-            "Hello world!", 
-            style: TextStyle(
-              color: Color.fromARGB(229, 11, 11, 11),
-              fontSize: 32,
-            ),
-            ),
-          ),
-      );
-  }
-}
