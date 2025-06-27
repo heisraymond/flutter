@@ -14,8 +14,9 @@ screen
 
 Here we are calling the fucntion
 */
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Scaffold(
+      backgroundColor: Color.fromARGB(255, 68, 138, 255),
       body: Center(
         child: Text("Hello world!"),
         )
