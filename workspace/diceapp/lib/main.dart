@@ -28,7 +28,13 @@ Here we are calling the fucntion
           ),
         ),
         child: const Center(
-          child: Text("Hello world!"),
+          child: Text(
+            "Hello world!", 
+            style: TextStyle(
+              color: Color.fromARGB(229, 11, 11, 11),
+              fontSize: 32,
+            ),
+            ),
           ),
       )
       ),
