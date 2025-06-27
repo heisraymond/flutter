@@ -16,7 +16,17 @@ Here we are calling the fucntion
 */
   runApp(MaterialApp(
     home: Scaffold(
-      body: Container(
+      body: GradientContainer(),
+      ),
+    ),
+  );
+} 
+
+class GradientContainer extends StatelessWidget {
+  @override
+  // Returns a widget
+  Widget build(context) {
+    return Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
@@ -36,8 +46,6 @@ Here we are calling the fucntion
             ),
             ),
           ),
-      )
-      ),
-    ),
-  );
-} 
+      );
+  }
+}
