@@ -17,9 +17,12 @@ Here we are calling the fucntion
 */
   runApp(MaterialApp(
     home: Scaffold(
-      body: GradientContainer(),
-      ),
+      body: GradientContainer([ 
+        Color.fromARGB(255, 38, 115, 247), 
+        Color.fromARGB(255, 83, 132, 217),
+        ]),
     ),
+  ),
   );
 } 
 
