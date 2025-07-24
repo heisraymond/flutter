@@ -21,7 +21,10 @@ class GradientContainer extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: StyledText()
+          // child: StyledText()
+          // When calling a class like this, it means you are
+          // also calling constructor function of the class
+          child: StyledText('Hello world!')
           ),
       );
   }
