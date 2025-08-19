@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'styled_text.dart';
 
+// Variables can be assigned
+var startAlignment = Alignment.topLeft;
+var endAlignment = Alignment.bottomRight;
+
 class GradientContainer extends StatelessWidget {
   // Constructor function
   // Let's add named positional for colors
@@ -17,8 +21,8 @@ class GradientContainer extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: colors,
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight
+            begin: startAlignment,
+            end: endAlignment
           ),
         ),
         child: Center(
