@@ -32,7 +32,7 @@ class GradientContainer extends StatelessWidget {
           // If we want the value to be passed to the StyledText()
           // class, then we have to define the value as an argument
           // in it's constructor function
-          child: Image.asset('assets/images/one.svg')
+          child: Image.asset('assets/images/dice-one.png')
           ),
       );
   }
