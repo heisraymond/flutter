@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'styled_text.dart';
+//import 'styled_text.dart';
 
 // Variables can be assigned
 var startAlignment = Alignment.topLeft;
@@ -32,7 +32,7 @@ class GradientContainer extends StatelessWidget {
           // If we want the value to be passed to the StyledText()
           // class, then we have to define the value as an argument
           // in it's constructor function
-          child: StyledText('Hello world!')
+          child: Image.asset('assets/images/one.svg')
           ),
       );
   }
